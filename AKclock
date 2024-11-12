@@ -1,0 +1,21 @@
+import time
+
+print("HI. I'm AK clock!")
+
+def countdown(minutes):
+    seconds = minutes * 60 
+    while seconds:
+        mins, secs = divmod(seconds, 60)  
+        timer = f"{mins:02}:{secs:02}"
+        print(timer, end="\r")  
+        time.sleep(1)
+        seconds -= 1
+
+    print("Time's up!")  
+
+
+try:
+    minutes = int(input("Enter the countdown time in minutes: "))
+    countdown(minutes)
+except ValueError:
+    print("Please enter a valid number.")
