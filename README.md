@@ -17,3 +17,6 @@ Try it live: [AKclock Live Demo](https://<AikoChanKp>.github.io/AKclock)
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Live Demo
+Try it now: [AKclock Live](https://AikoChanKp.github.io/AKclock)
