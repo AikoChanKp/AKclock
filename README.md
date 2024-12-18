@@ -1,19 +1,19 @@
-import time
+# AKclock
 
-def countdown(minutes):
-    seconds = minutes * 60  # แปลงจากนาทีเป็นวินาที
-    while seconds:
-        mins, secs = divmod(seconds, 60)  # แปลงเป็นนาที:วินาที
-        timer = f"{mins:02}:{secs:02}"
-        print(timer, end="\r")  # พิมพ์เวลาบนบรรทัดเดียว
-        time.sleep(1)
-        seconds -= 1
+**AKclock** is a cute and simple countdown timer you can use directly from your web browser.
 
-    print("Time's up!")  # แสดงข้อความเมื่อหมดเวลา
+## Features
+- User-friendly design
+- Runs directly in the browser without any installation
+- Suitable for desktop and mobile devices
 
-# รับค่าจากผู้ใช้
-try:
-    minutes = int(input("Enter the countdown time in minutes: "))
-    countdown(minutes)
-except ValueError:
-    print("Please enter a valid number.")
+## How to Use
+1. Visit the [AKclock](https://<AikoChanKp>.github.io/AKclock) page.
+2. Enter the countdown time in minutes and press `Start Countdown`.
+3. Watch the countdown and receive an alert when time is up!
+
+## Demo
+Try it live: [AKclock Live Demo](https://<AikoChanKp>.github.io/AKclock)
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
