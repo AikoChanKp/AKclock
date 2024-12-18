@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKclock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">AKclock</h1>
+        <p class="subtitle">countdown timer by AIKO</p>
+        <form id="countdownForm">
+            <label for="minutes" class="label">Enter time (minutes):</label>
+            <input type="number" id="minutes" name="minutes" min="1" required class="input">
+            <button type="submit" class="button">Start Countdown</button>
+        </form>
+        <div id="timerDisplay" class="timer">00:00</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
